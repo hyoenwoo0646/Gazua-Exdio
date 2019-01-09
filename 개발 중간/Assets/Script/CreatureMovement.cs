@@ -14,6 +14,7 @@ public class CreatureMovement : MonoBehaviour
     GameObject traceTaget;
     GameObject Player;
     GameObject Enemy;
+    GameObject danger;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class CreatureMovement : MonoBehaviour
         StartCoroutine("ChangeMovement");
         Player = GameObject.Find("Player");
         Enemy = GameObject.Find("enemy_robot");
+        danger = GameObject.Find("danger");
     }
 
     IEnumerator ChangeMovement()
@@ -40,6 +42,8 @@ public class CreatureMovement : MonoBehaviour
 
 
             StopCoroutine("ChangeMovemnet");
+
+            danger.GetComponent<Renderer>().enabled = true;
         }
     }
 
@@ -65,6 +69,8 @@ public class CreatureMovement : MonoBehaviour
             isMoving = false;
             StartCoroutine("ChangeMovement");
             movePower = 50;
+
+            danger.GetComponent<Renderer>().enabled = false;
         }
     }
 
