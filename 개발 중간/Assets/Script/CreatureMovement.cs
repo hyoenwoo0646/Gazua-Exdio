@@ -113,11 +113,11 @@ public class CreatureMovement : MonoBehaviour
 
         float distance = Vector3.Distance(Player.transform.position, Enemy.transform.position);
 
-        if(distance < 80 && isMoving == true)
+        if(distance < 200 && isMoving == true)
         {
             movePower = 0;
         }
-        else if(distance > 81 && isMoving == false)
+        else if(distance > 201 && isMoving == false)
         {
             movePower = 50;
         }
