@@ -15,4 +15,8 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("HomeScene");
     }
 
+    public void House1Scene()  //1번 가정집
+    {
+        SceneManager.LoadScene("HouseScene1");
+    }
 }
