@@ -1,37 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ManagerClass : MonoBehaviour
 {
-    static ManagerClass current = null;
-    static GameObject container = null;
-
-    public static ManagerClass Instance
+    public static ManagerClass instance;
+    public void Awake()   //싱글톤
     {
-        get
-        {
-            if(current == null)
-            {
-                container = new GameObject();
-                container.name = "Singleton";
-                current = container.AddComponent(typeof(ManagerClass)) as ManagerClass;
-                DontDestroyOnLoad(current);
-            }
-            return current;
-        }
+        ManagerClass.instance = this;
     }
 
 
     static float min = 0f;
     static float hour = 0f;
 
-    public void Inv()
+    public void Inv()  //시간 함수 반복 실행
     {
-        InvokeRepeating("Timer", 1.0f, 5.0f);
+        InvokeRepeating("Timer", 5.0f, 5.0f);
     }
 
-    public void Timer()
+    public void Timer()   //5초당 30분
     {
         min += 30;
         if(min == 60)
@@ -46,6 +35,10 @@ public class ManagerClass : MonoBehaviour
         }
         Debug.Log(hour);
         Debug.Log(min);
-        
+    }
+
+    public void ReStart()
+    {
+        SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
     }
 }

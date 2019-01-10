@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 42544d99771946d4da47e8fc01e2ecdc
+guid: 95b37bcd0909be74d8046665d5314917
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "\uBC14\uB2E5_0"
-    21300002: "\uBC14\uB2E5_1"
-    21300004: "\uBC14\uB2E5_2"
-    21300006: "\uBC14\uB2E5_3"
+    21300000: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_0"
+    21300002: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_1"
+    21300004: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_2"
+    21300006: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_3"
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,7 +88,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uBC14\uB2E5_0"
+      name: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -102,13 +102,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41f03585a66823f45ac378427e04aa16
+      spriteID: c89ad866359921a49b7fa450f3ab9cf0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uBC14\uB2E5_1"
+      name: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_1"
       rect:
         serializedVersion: 2
         x: 0
@@ -122,13 +122,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d034e3796ad194592d6405818bd0ea
+      spriteID: 9b4a58fa3513228469525d42228c7a1d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uBC14\uB2E5_2"
+      name: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_2"
       rect:
         serializedVersion: 2
         x: 0
@@ -142,13 +142,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7678c0a5076911940ab477b5e2221e37
+      spriteID: 879f70e836029e84896b1a7cc70e0029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\uBC14\uB2E5_3"
+      name: "\uAC00\uC815\uC9D1 2 \uC5B4\uB461\uAC8C \uAC77\uB294 \uBD80\uBD84 \uC218\uC8151_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -162,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b98175db997a12f49819bf8692ff3283
+      spriteID: 87aca42d13ee52142a48e405a5934827
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1bab6c2cc3fc88241ab9474c844651dd
+    spriteID: 433e0310dcc2f1d49afa7aabc810ef9d
     vertices: []
     indices: 
     edges: []
