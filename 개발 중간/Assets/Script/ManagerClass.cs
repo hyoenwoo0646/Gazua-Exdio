@@ -4,22 +4,10 @@ using UnityEngine;
 
 public class ManagerClass : MonoBehaviour
 {
-    static ManagerClass current = null;
-    static GameObject container = null;
-
-    public static ManagerClass Instance
+    public static ManagerClass instance;
+    public void Awake()
     {
-        get
-        {
-            if(current == null)
-            {
-                container = new GameObject();
-                container.name = "Singleton";
-                current = container.AddComponent(typeof(ManagerClass)) as ManagerClass;
-                DontDestroyOnLoad(current);
-            }
-            return current;
-        }
+        ManagerClass.instance = this;
     }
 
 
@@ -28,7 +16,7 @@ public class ManagerClass : MonoBehaviour
 
     public void Inv()
     {
-        InvokeRepeating("Timer", 1.0f, 5.0f);
+        InvokeRepeating("Timer", 5.0f, 5.0f);
     }
 
     public void Timer()
@@ -45,7 +33,6 @@ public class ManagerClass : MonoBehaviour
             hour = 0f;
         }
         Debug.Log(hour);
-        Debug.Log(min);
-        
+        Debug.Log(min);   
     }
 }

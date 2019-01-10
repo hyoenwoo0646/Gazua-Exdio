@@ -78,7 +78,8 @@
     <Compile Include="Assets\Script\Move Script\HomePMove.cs" />
     <Compile Include="Assets\Script\Move Script\House1Move.cs" />
     <Compile Include="Assets\Script\Move Script\playerMove.cs" />
-    <Compile Include="Assets\Script\TestFunc.cs" />
+    <Compile Include="Assets\Script\TimeManager\HomeTime.cs" />
+    <Compile Include="Assets\Script\TimeManager\House1Time.cs" />
     <Compile Include="Assets\Script\Tooltip.cs" />
     <Compile Include="Assets\Script\UIInventory.cs" />
     <Compile Include="Assets\Script\UIItem.cs" />
