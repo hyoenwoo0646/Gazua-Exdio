@@ -2420,6 +2420,7 @@ GameObject:
   - component: {fileID: 1596065827}
   - component: {fileID: 1596065822}
   - component: {fileID: 1596065821}
+  - component: {fileID: 1596065819}
   - component: {fileID: 1596065820}
   m_Layer: 0
   m_Name: Player
@@ -2428,6 +2429,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1596065819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596065818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c867f7187b4a54741b666fff84336b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxElec: 100
+  MaxHappy: 100
+  MaxArmor: 100
+  Elec: 100
+  Happy: 100
+  Armor: 100
 --- !u!95 &1596065820
 Animator:
   serializedVersion: 3

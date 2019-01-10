@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ManagerClass : MonoBehaviour
 {
@@ -33,6 +34,11 @@ public class ManagerClass : MonoBehaviour
             hour = 0f;
         }
         Debug.Log(hour);
-        Debug.Log(min);   
+        Debug.Log(min);
+    }
+
+    public void ReStart()
+    {
+        SceneManager.LoadScene("TitleScene", LoadSceneMode.Single);
     }
 }
