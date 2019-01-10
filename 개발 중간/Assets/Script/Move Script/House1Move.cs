@@ -17,7 +17,7 @@ public class House1Move : MonoBehaviour
     {
         this.player = GameObject.FindGameObjectWithTag("Player");
         Vector3 pPos = this.transform.position;
-        if (pPos.x >= -16.0f && pPos.x <= 33.0f && pPos.y <= -93.0f && Input.GetKeyDown("w"))//1>2층 위로 이동
+        if (pPos.x >= -16.0f && pPos.x <= 33.0f && pPos.y <= -93.0f && pPos.y >= -106.0f && Input.GetKeyDown("w"))//1>2층 위로 이동
         {
 
             player.transform.position = new Vector3(pPos.x, 133.4f, 0f);//좌표

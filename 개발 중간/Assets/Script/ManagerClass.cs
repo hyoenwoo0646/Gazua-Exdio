@@ -5,7 +5,7 @@ using UnityEngine;
 public class ManagerClass : MonoBehaviour
 {
     public static ManagerClass instance;
-    public void Awake()
+    public void Awake()   //싱글톤
     {
         ManagerClass.instance = this;
     }
@@ -14,12 +14,12 @@ public class ManagerClass : MonoBehaviour
     static float min = 0f;
     static float hour = 0f;
 
-    public void Inv()
+    public void Inv()  //시간 함수 반복 실행
     {
         InvokeRepeating("Timer", 5.0f, 5.0f);
     }
 
-    public void Timer()
+    public void Timer()   //5초당 30분
     {
         min += 30;
         if(min == 60)

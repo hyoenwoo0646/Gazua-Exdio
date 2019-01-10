@@ -7,7 +7,7 @@ public class House1Time : MonoBehaviour
     int num = 1;
     void Start()
     {
-        while(num<=4)
+        while(num<=4)  //이동시간 2시간 소모
         {
             ManagerClass.instance.Timer();
             num++;

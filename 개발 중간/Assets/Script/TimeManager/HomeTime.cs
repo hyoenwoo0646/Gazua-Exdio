@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class HomeTime : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Start()  //아지트 시간 흐름
     {
         ManagerClass.instance.Inv();
         Debug.Log("asdf");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
