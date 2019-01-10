@@ -69,6 +69,9 @@
     <Compile Include="Assets\Script\Crafting_exit.cs" />
     <Compile Include="Assets\Script\crafting_map.cs" />
     <Compile Include="Assets\Script\CreatureMovement.cs" />
+    <Compile Include="Assets\Script\GetItem.cs" />
+    <Compile Include="Assets\Script\GetItem_exit.cs" />
+    <Compile Include="Assets\Script\GetItem_map.cs" />
     <Compile Include="Assets\Script\Inventory.cs" />
     <Compile Include="Assets\Script\Item.cs" />
     <Compile Include="Assets\Script\ItemDatabase.cs" />
