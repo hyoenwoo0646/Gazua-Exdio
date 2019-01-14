@@ -15,6 +15,8 @@ public class CreatureMovement : MonoBehaviour
     GameObject Player;
     GameObject Enemy;
     GameObject danger;
+    GameObject Fight;
+    GameObject Defense;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,11 @@ public class CreatureMovement : MonoBehaviour
         Player = GameObject.Find("Player");
         Enemy = GameObject.Find("enemy_robot");
         danger = GameObject.Find("danger");
+        Fight = GameObject.Find("Fight_UI");
+        Defense = GameObject.Find("Defense_UI");
+
+        Fight.active = false;
+        Defense.active = false;
     }
 
     IEnumerator ChangeMovement()
@@ -71,6 +78,8 @@ public class CreatureMovement : MonoBehaviour
             movePower = 50;
 
             danger.GetComponent<Renderer>().enabled = false;
+            Fight.active = false;
+            Defense.active = false;
         }
     }
 
@@ -122,6 +131,8 @@ public class CreatureMovement : MonoBehaviour
         if(distance < 50 && isMoving == true)
         {
             movePower = 0;
+            Fight.active = true;
+            Defense.active = true;
         }
         else if(distance > 51 && isMoving == false)
         {
