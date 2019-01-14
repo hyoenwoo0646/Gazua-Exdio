@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Item Datavase
   - Enemy
-  - getpoint
   layers:
   - Default
   - TransparentFX

@@ -19,9 +19,4 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("HouseScene1");
     }
-
-    public void HouseScene2() //2번 가정집
-    {
-        SceneManager.LoadScene("HouseScene2");
-    }
 }

@@ -30,10 +30,7 @@ public class playerMove : MonoBehaviour {
             moveV = Vector3.left;
             rota.eulerAngles = new Vector3(0, 180, 0);    //왼쪽 회전
             transform.rotation = Quaternion.Slerp(transform.rotation, rota, Time.deltaTime * 100.0f);  //회전 속도
-            if (Speed == 30)
-            {
-                animator.SetBool("Working", true);
-            }
+            animator.SetBool("Working", true);
         }
 
         else if(Input.GetAxisRaw("Horizontal")>0)
@@ -41,10 +38,7 @@ public class playerMove : MonoBehaviour {
             moveV = Vector3.right;
             rota.eulerAngles = new Vector3(0, 0, 0);    //오른쪽 회전
             transform.rotation = Quaternion.Slerp(transform.rotation, rota, Time.deltaTime * 100.0f);    //회전 속도
-            if (Speed == 30)
-            {
-                animator.SetBool("Working", true);
-            }
+            animator.SetBool("Working", true);
         }
 
         transform.position += moveSpeed * moveV * Time.deltaTime * Speed;
